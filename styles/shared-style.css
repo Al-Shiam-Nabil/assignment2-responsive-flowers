@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    color:rgba(0, 0, 0, .5);
+}
+
+.secondary-font{
+    font-family: "Noto Serif", serif;
+}
+
+.heading-color{
+    color:#000000;
+}
+
+.secondary-color{
+    color:#E95A08;
+}
+
+.card-color{
+    color:111111;
+}
+
+.footer-color{
+    color:#6B7280;
+}
+
+
