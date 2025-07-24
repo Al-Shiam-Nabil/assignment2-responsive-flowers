@@ -123,4 +123,8 @@ nav {
   .header-banner-description {
     font-size: 1rem;
   }
+
+  .right-header-banner{
+    margin-right: -16px;
+  }
 }
