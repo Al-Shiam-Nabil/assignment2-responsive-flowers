@@ -1,70 +1,126 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.logo img{
-    max-width: 135px;
-    height: 82px;
+.logo img {
+  max-width: 135px;
+  height: 82px;
+  object-fit: contain;
+  display: block;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #8987a1;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.navbar li:first-child a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.navbar li:last-child a {
+  color: #000000;
+}
+
+.navbar li a:hover {
+  color: #e95a08;
+}
+
+/* header banner */
+.header-banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-block: 120px;
+}
+
+.left-header-banner {
+  flex: 1;
+}
+
+.header-banner-title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.header-banner-description {
+  font-size: 1.3rem;
+}
+
+.right-header-banner {
+  flex: 1;
+}
+
+.right-header-banner img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo img {
+    max-width: 100px;
+    height: auto;
     object-fit: contain;
-    display: block;
+  }
+
+  .header-banner-container {
+    flex-direction: column-reverse;
+    margin-block: 70px;
+    gap: 28px;
+  }
+
+  .header-banner-title {
+    max-width: 700px;
+    font-size: 3.5rem;
+  }
 }
 
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:48px;
+/* header responsive for tablets*/
+@media screen and (max-width: 768px) {
+  .hide-nav-link {
+    display: none;
+  }
+
+  .header-banner-container {
+    margin-block: 28px 66px;
+  }
+
+  .header-banner-title {
+    max-width: 600px;
+    font-size: 3rem;
+  }
 }
 
-.navbar li{
-list-style: none;
+/* header responsive for mobile */
+@media screen and (max-width: 576px) {
+  .logo img {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .header-banner-title {
+    font-size: 2rem;
+    max-width: 300px;
+  }
+
+  .header-banner-description {
+    font-size: 1rem;
+  }
 }
-
-.navbar li a{
-    text-decoration: none;
-    color:#8987A1;
-    display: inline-block;
-    transition:color .2s;
-}
-
-.navbar li:first-child a{
-    color:#000000;
-font-weight: bold;
-}
-
-.navbar li:last-child a{
-color:#000000;
-}
-
-.navbar li a:hover{
-       color:#e95a08;
-}
-
-
-@media screen and (max-width:992px){
-      .logo img{
-        max-width: 100px;
-        height:auto;
-        object-fit: contain;
-    }
-}
-
-/* nav responsive for tablets*/
-@media screen and (max-width:768px){
-    .hide-nav-link{
-       display: none;
-    }
-}
-
-/* nav responsive for mobile */
-@media screen and (max-width:576px){
-      .logo img{
-        max-width: 80px;
-        height:auto;
-        object-fit: contain;
-    }
-}
-
