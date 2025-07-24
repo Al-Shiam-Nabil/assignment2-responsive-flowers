@@ -156,6 +156,10 @@ nav {
     gap:20px;
 }
 
+.card img{
+    width:100%;
+}
+
 .card-details{
     text-align: center;
 }
@@ -173,15 +177,35 @@ nav {
 
 .card-btn{
     width:100%;
-    padding: 19px 80px;
+    padding-block: 18px;
     font-weight: 600;
     color:white;
     background-color: #e95a08;
     border: none;
+    font-size: 1rem;
 }
 
 @media screen and (max-width:992px){
     .plant-container{
         margin-top: 70px;
     }
+
 }
+
+    @media screen and (max-width:576px){
+        .card-container{
+            margin-top: 30px;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .card .name{
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.card .price{
+    font-size: 1rem;
+}
+
+
+    }
