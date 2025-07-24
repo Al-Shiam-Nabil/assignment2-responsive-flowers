@@ -344,6 +344,7 @@ nav {
 .latest-deal-background a {
   color: white;
   font-weight: 600;
+  transition: color 0.2s;
 }
 
 .right-latest-deal a {
@@ -363,7 +364,7 @@ nav {
 .left-latest-deal h3 {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .left-latest-background-1 {
@@ -388,7 +389,7 @@ nav {
 .right-latest-deal h3 {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .right-latest-background {
@@ -400,4 +401,68 @@ nav {
 
 .latest-deal-background a:hover {
   color: rgb(226, 223, 223);
+}
+
+@media screen and (max-width: 992px) {
+  .latest-deal-background-container {
+    flex-direction: column;
+    margin-block: 80px;
+  }
+
+  .left-latest-deal {
+    flex-direction: row;
+    width: 100%;
+    height: 210px;
+  }
+
+  .left-latest-background-1,
+  .left-latest-background-2 {
+    width: 50%;
+    height: 100%;
+  }
+
+  .right-latest-deal {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .latest-deal-background-container {
+    margin-block: 50px;
+  }
+
+  .right-latest-deal {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .latest-deal-background-container {
+    gap: 20px;
+  }
+
+  .left-latest-deal {
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+  }
+
+  .left-latest-background-1,
+  .left-latest-background-2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .right-latest-deal {
+    height: 200px;
+  }
+
+  .right-latest-background h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .right-latest-deal a {
+    font-size: 1rem;
+  }
 }
