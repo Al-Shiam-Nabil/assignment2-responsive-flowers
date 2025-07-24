@@ -120,9 +120,7 @@ nav {
     max-width: 300px;
   }
 
-
-
-  .right-header-banner{
+  .right-header-banner {
     margin-right: -16px;
   }
 }
@@ -130,82 +128,86 @@ nav {
 /* main */
 /* plant section */
 
-.plant-container{
-    margin-top: 120px ;
+.plant-container {
+  margin-top: 120px;
 }
 
-.plant-title, .plant-sub-title{
-    text-align: center;
-    max-width: 888px;
-    margin: auto;
+.plant-title,
+.plant-sub-title {
+  text-align: center;
+  max-width: 888px;
+  margin: auto;
 }
 
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-    row-gap: 30px;
-    margin-top: 50px;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-top: 50px;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap:20px;
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.card img{
-    width:100%;
+.card img {
+  width: 100%;
 }
 
-.card-details{
-    text-align: center;
+.card-details {
+  text-align: center;
 }
 
-.card .name{
-    font-size: 1.35rem;
-    font-weight: 500;
+.card .name {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card .price {
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.card-btn {
+  width: 100%;
+  padding-block: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #e95a08;
+  border: none;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .plant-container {
+    margin-top: 70px;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .card .name {
+    font-size: 1rem;
     margin-bottom: 8px;
-}
+  }
 
-.card .price{
-    font-size: 1.35rem;
-    font-weight: bold;
-}
-
-.card-btn{
-    width:100%;
-    padding-block: 18px;
-    font-weight: 600;
-    color:white;
-    background-color: #e95a08;
-    border: none;
+  .card .price {
     font-size: 1rem;
+  }
 }
 
-@media screen and (max-width:992px){
-    .plant-container{
-        margin-top: 70px;
-    }
-
+@media screen and (max-width: 576px) {
+  .card-container {
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-    @media screen and (max-width:576px){
-        .card-container{
-            margin-top: 30px;
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        .card .name{
-    font-size: 1rem;
-    margin-bottom: 8px;
-}
-
-.card .price{
-    font-size: 1rem;
-}
-
-
-    }
