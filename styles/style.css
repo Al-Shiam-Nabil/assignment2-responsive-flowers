@@ -437,6 +437,10 @@ nav {
 }
 
 @media screen and (max-width: 576px) {
+    .latest-deal-container {
+  margin-top: 80px;
+}
+
   .latest-deal-background-container {
     gap: 20px;
   }
