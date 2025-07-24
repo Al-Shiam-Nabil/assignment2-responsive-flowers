@@ -4,31 +4,42 @@
   box-sizing: border-box;
 }
 
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: "Inter", sans-serif;
-    color:rgba(0, 0, 0, .5);
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  color: #00000080;
+  padding-inline: 30px;
+  background-color: #F5F8FF;
 }
 
-.secondary-font{
-    font-family: "Noto Serif", serif;
+.content-width {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-.heading-color{
-    color:#000000;
+.secondary-font {
+  font-family: "Noto Serif", serif;
 }
 
-.secondary-color{
-    color:#E95A08;
+.heading-color {
+  color: #000000;
 }
 
-.card-color{
-    color:111111;
+.secondary-color {
+  color: #e95a08;
 }
 
-.footer-color{
-    color:#6B7280;
+.card-color {
+  color: #111111;
 }
 
+.footer-color {
+  color: #6b7280;
+}
 
+@media screen and (max-width: 576px) {
+  body {
+    padding-inline: 16px;
+  }
+}
