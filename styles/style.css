@@ -44,4 +44,27 @@ color:#000000;
 }
 
 
+@media screen and (max-width:992px){
+      .logo img{
+        max-width: 100px;
+        height:auto;
+        object-fit: contain;
+    }
+}
+
+/* nav responsive for tablets*/
+@media screen and (max-width:768px){
+    .hide-nav-link{
+       display: none;
+    }
+}
+
+/* nav responsive for mobile */
+@media screen and (max-width:576px){
+      .logo img{
+        max-width: 63px;
+        height:auto;
+        object-fit: contain;
+    }
+}
 
