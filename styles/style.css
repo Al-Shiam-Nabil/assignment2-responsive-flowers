@@ -547,7 +547,7 @@ input[type="submit"]:hover {
   }
 
   form {
-    width: 90%;
+    width: 85%;
   }
 
   form input[type="email"] {
@@ -687,5 +687,9 @@ footer {
 
   .foot-1 {
     max-width: 100%;
+  }
+
+  .foot-1 p{
+    font-size: 1rem;
   }
 }
