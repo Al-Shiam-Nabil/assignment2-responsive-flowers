@@ -154,14 +154,13 @@ nav {
   cursor: pointer;
 }
 
-.card:hover img{
+.card:hover img {
   transform: scale(1.02);
 }
 
-
 .card img {
   width: 100%;
-   transition: transform .2s linear;
+  transition: transform 0.2s linear;
 }
 
 .card-details {
@@ -188,11 +187,11 @@ nav {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color .3s linear;
+  transition: background-color 0.3s linear;
 }
 
-.card-btn:hover{
-  background-color:#04587e;
+.card-btn:hover {
+  background-color: #04587e;
 }
 
 @media screen and (max-width: 992px) {
@@ -237,11 +236,6 @@ nav {
   margin-top: 200px !important;
 }
 
-.badge img {
-  width: 100%;
-  height: 100%;
-}
-
 .left-plant-lover {
   width: 540px;
   height: 597px;
@@ -260,6 +254,21 @@ nav {
   height: 286px;
   top: -127px;
   right: -93px;
+  animation: badge-animation 10s linear infinite;
+}
+
+.badge img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes badge-animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .right-plant-lover {
@@ -624,7 +633,7 @@ footer {
   gap: 24px;
 }
 
-footer a:hover{
+footer a:hover {
   text-decoration: underline;
 }
 

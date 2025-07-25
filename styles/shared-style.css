@@ -10,7 +10,7 @@ body {
   font-family: "Inter", sans-serif;
   color: #00000080;
   padding-inline: 30px;
-  background-color: #F5F8FF;
+  background-color: #f5f8ff;
 }
 
 .content-width {
@@ -38,20 +38,19 @@ body {
   color: #6b7280;
 }
 
-.title{
+.title {
   font-family: "Noto Serif", serif;
   font-size: 3rem;
-  color:#000000;
+  color: #000000;
   margin-bottom: 15px;
 }
 
-.sub-title{
+.sub-title {
   font-size: 1.33rem;
 }
 
-
-@media  screen and (max-width:768px) {
-  .title{
+@media screen and (max-width: 768px) {
+  .title {
     font-size: 2.5rem;
   }
 }
@@ -61,12 +60,11 @@ body {
     padding-inline: 16px;
   }
 
-   .title{
+  .title {
     font-size: 1.5rem;
   }
 
-.sub-title{
-  font-size: 1rem;
-}
-
+  .sub-title {
+    font-size: 1rem;
+  }
 }
